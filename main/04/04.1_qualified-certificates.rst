@@ -61,8 +61,8 @@ seguenti raccomandazioni:
       l’obbligo di richiedere la revoca del certificato nel caso in cui
       il titolare del certificato lasci l’organizzazione. Nel caso in
       cui l’\ :code:`organizationName` sia presente, i medesimi vincoli si
-      applicano anche all’eventuale codifica dell’attributo title.
-      L’attributo title, se presente, contiene il ruolo del titolare in
+      applicano anche all’eventuale codifica dell’attributo ``title``.
+      L’attributo ``title``, se presente, contiene il ruolo del titolare in
       linguaggio naturale e, facoltativamente, una seconda parte
       costituita da un codice numerico derivato dai codici delle
       professioni pubblicati da ISTAT. Nel caso in cui sia presente,
