@@ -71,16 +71,16 @@ seguenti raccomandazioni:
       L’\ :code:`organizationName` non è utilizzato nel caso in cui il titolare
       sia un semplice cliente dell’organizzazione.
 
-c. Il :code:`dnQualifier` (`ᴏɪᴅ 2.5.4.46 <http://oid-info.com/get/2.5.4.46>`__)
-   che contiene il codice identificativo del titolare presso il prestatore
-   del servizio. Tale codice è univoco nell’ambito del prestatore del servizio.
+   c. Il :code:`dnQualifier` (`ᴏɪᴅ 2.5.4.46 <http://oid-info.com/get/2.5.4.46>`__)
+      che contiene il codice identificativo del titolare presso il prestatore
+      del servizio. Tale codice è univoco nell’ambito del prestatore del servizio.
 
-d. La possibilità di inserire nell’attributo :code:`description`
-   (`ᴏɪᴅ 2.5.4.13 <http://oid-info.com/get/2.5.4.13>`__) il codice
-   EORI (*Economic Operator Registration and Identification*)
-   di cui al Regolamento (UE) №312/2009 del 16 aprile 2009 e successive
-   modificazioni. In tal caso il codice stesso è preceduto dal testo ``EORI``
-   e dal carattere “``:``” (esadecimale 0x3A).
+   d. La possibilità di inserire nell’attributo :code:`description`
+      (`ᴏɪᴅ 2.5.4.13 <http://oid-info.com/get/2.5.4.13>`__) il codice
+      EORI (*Economic Operator Registration and Identification*)
+      di cui al Regolamento (UE) №312/2009 del 16 aprile 2009 e successive
+      modificazioni. In tal caso il codice stesso è preceduto dal testo ``EORI``
+      e dal carattere “``:``” (esadecimale 0x3A).
 
 6. Al fine di normalizzare l’uso della sintassi dall’identificatore
    ‘\ *legal person semantics identifier*\ ’ descritto nel
