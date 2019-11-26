@@ -88,7 +88,7 @@ seguenti raccomandazioni:
    nel caso di organizzazioni non dotate né di partita IVA né di NTR, ma
    solamente del codice fiscale, è possibile utilizzare la modalità
    descritta al numero 3 del paragrafo 5.1.4, utilizzando i due
-   caratteri “``CF``” (esempio: ``CF:IT- 97735020584``).
+   caratteri “``CF``” (esempio: ``CF:IT-97735020584``).
 
 7. Salvo quanto disposto nelle citate norme ETSI, eventuali ulteriori
    limiti d’uso sono inseriti nell’attributo :code:`explicitText` del campo
