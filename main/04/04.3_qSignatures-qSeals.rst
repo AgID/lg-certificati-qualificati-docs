@@ -1,0 +1,10 @@
+.. _`§4.3`:
+
+Formati di firme e sigilli elettronici qualificati
+--------------------------------------------------
+
+Nella realizzazione di servizi e applicazioni per la generazione di
+firme e sigilli elettronici qualificati, i prestatori di servizi
+fiduciari qualificati si attengono alle disposizioni emanate con la
+`Decisione di Esecuzione (UE) № 1506/2015 <https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX%3A32015D1506>`__
+dell’8 settembre 2015 e successive modificazioni.
