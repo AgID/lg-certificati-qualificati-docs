@@ -22,7 +22,7 @@ seguenti raccomandazioni:
    è utilizzato l’\ :code:`accessMethod` :code:`id-ad-caIssuers`, con
    :code:`accessLocation` :code:`uniformResourceIdentifier`.
 
-4. L’estensione :code:`authorityKeyIdentifier` (`ᴏɪᴅ 2.5.29.35 <http://oid-info.com/get/2.5.23.35>`__) contiene almeno
+4. L’estensione :code:`authorityKeyIdentifier` (`ᴏɪᴅ 2.5.29.35 <http://oid-info.com/get/2.5.29.35>`__) contiene almeno
    il campo :code:`keyIdentifier`, *non* marcata critica.
 
 5. Il campo :code:`SubjectDN` (dati identificativi del titolare) è
