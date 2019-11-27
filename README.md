@@ -8,5 +8,3 @@ Il presente provvedimento, emanato ai sensi dell’articolo 71 del CAD, contiene
 ## Link al documento e consultazione
 
 Link al documento *Docs Italia*: https://docs.italia.it/docs/lg-certificati-qualificati-docs
-
-Link per commenti *Forum Italia*: https://forum.italia.it/c/lg-certificati-qualificati-docs
