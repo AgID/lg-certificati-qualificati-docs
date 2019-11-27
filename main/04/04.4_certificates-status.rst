@@ -1,0 +1,24 @@
+.. _`§4.4`:
+
+Informazioni sullo stato dei certificati qualificati di firma e sigillo
+-----------------------------------------------------------------------
+
+Le informazioni afferenti lo stato del certificato preferibilmente
+sono rese disponibili attraverso il servizio OCSP ed eventualmente
+anche tramite liste di revoca (CRL). A tal fine i certificati
+qualificati contengono l’estensione :code:`authorityInfoAccess`
+(`ᴏɪᴅ 1.3.6.1.5.5.7.1.1 <http://oid-info.com/get/1.3.6.1.5.5.7.1.1>`__)
+contenente il campo :code:`accessDescription` con l’attributo
+:code:`accessMethod`, che contiene l’identificativo :code:`id-ad-ocsp`
+(`ᴏɪᴅ 1.3.6.1.5.5.7.48.1 <http://oid-info.com/get/1.3.6.1.5.5.7.48.1>`__) e l’attributo
+:code:`accessLocation`, che contiene l’URI che punta all’\ *OCSP Responder* e,
+eventualmente, l’estensione :code:`CRLDistributionPoints`
+(`ᴏɪᴅ 2.5.29.31 <http://oid-info.com/get/2.5.29.31>`__).
+Le estensioni *non* sono marcate critiche.
+
+Le CRL contengono l’estensione :code:`ExpiredCertsOnCRL`
+(`ᴏɪᴅ 2.5.29.60 <http://oid-info.com/get/2.5.29.60>`__),
+prevista dallo standard X.509.
+
+Le informazioni sulla revoca e sospensione dei certificati sono
+liberamente accessibili in rete.
