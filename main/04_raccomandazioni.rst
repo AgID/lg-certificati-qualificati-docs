@@ -21,6 +21,6 @@ che pubblica tali informazioni sul proprio sito web istituzionale.
   :maxdepth: 3
 
   04/04.1_qualified-certificates.rst
-  04/04.2_CA-and-timestamp-certificates.rst
+  04/04.2_CA-timestamp-certificates.rst
   04/04.3_qSignatures-qSeals.rst
   04/04.4_certificates-status.rst
