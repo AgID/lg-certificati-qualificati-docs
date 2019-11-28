@@ -1,0 +1,64 @@
+.. _`§4.2`:
+
+Profilo dei certificati di certificazione e validazione temporale
+-----------------------------------------------------------------
+
+1. Il profilo dei certificati di certificazione è conforme alla specifica :RFC:`5280`.
+
+2. Il profilo dei certificati di marcatura temporale è conforme alla norma ETSI
+   `EN 319-422 <http://www.etsi.org/deliver/etsi_en/319400_319499/319422/01.01.01_60/en_319422v010101p.pdf>`__ versione 1.1.1.
+
+3. Per la codifica dei certificati deve essere utilizzato il formato ASN.1 – DER
+   (ISO/IEC 8824, 8825) in rappresentazione binaria o alfanumerica, ottenuta
+   applicando la trasformazione *Base64* (:RFC:`1421` e successive modifiche);
+   l’intestazione e la coda previsti in RFC 1421 possono essere assenti. Nel primo
+   caso il file contenente il certificato deve assumere l’estensione ``cer`` o
+   ``der``, nel secondo caso ``b64``.
+
+4. I certificati di certificazione contengono le seguenti estensioni:
+
+   a. :code:`keyUsage` (`ᴏɪᴅ 2.5.29.15 <http://oid-info.com/get/2.5.29.15>`__) —
+      contenente i valori ``keyCertSign`` e ``CRLSign`` (bit #5 e #6 impostati a ``1``);
+      l’estensione è marcata *critica*;
+
+   b. :code:`basicConstraints` (`ᴏɪᴅ 2.5.29.19 <http://oid-info.com/get/2.5.29.19>`__) —
+      contenente il valore ``CA=true``; l’estensione è marcata *critica*;
+
+   c. :code:`certificatePolicies` (`ᴏɪᴅ 2.5.29.32 <http://oid-info.com/get/2.5.29.32>`__) —
+      contenente uno o più identificativi delle :code:`PolicyIdentifier:code e le URL
+      dei relativi CPS. Può contenere l’OID geerico previsto dall’\ :RFC:`5280`
+      (`2.5.29.32.0 <http://oid-info.com/get/2.5.29.32.0>`__)); l’estensione *non* è
+      marcata critica;
+
+   d. :code:`subjectKeyIdentifier` (`ᴏɪᴅ 2.5.29.14 <http://oid-info.com/get/2.5.29.14>`__) —
+      contenente il valore :code:`keyIdentifier` per identificare il certificato
+      l’estensione *non* è marcata critica;
+
+   e. Ulteriori estensioni possono essere inserite nel certificato purché conformi
+      agli standard citati nel presente provvedimento e *non* marcate critiche.
+
+5. I certificati di marcatura temporale contengono le seguenti estensioni:
+
+   a. :code:`keyUsage` (`ᴏɪᴅ 2.5.29.15 <http://oid-info.com/get/2.5.29.15>`__) —
+      contenente il valore ``digitalSignature`` (bit #0 impostato a ``1``); l’estensione
+      è marcata *critica*;
+
+   b. :code:`extendedKeyUsage` (`ᴏɪᴅ 2.5.29.37 <http://oid-info.com/get/2.5.29.37>`__) —
+      contenente esclusivamente il campo :code:`keyPurposeId` impostato su ``timeStamping``;
+      l’estensione è marcata *critica*;
+
+   c. :code:`certificatePolicies` (`ᴏɪᴅ 2.5.29.32 <http://oid-info.com/get/2.5.29.32>`__) —
+      contenente uno o più identificativi delle :code:`PolicyIdentifier` e le URL
+      del relativo CPS; l’estensione *non* è marcata critica;
+
+   d. :code:`authorityKeyIdentifier` (`ᴏɪᴅ 2.5.29.35 <http://oid-info.com/get/2.5.29.35>`__) —
+      contenente almeno il valore :code:`keyIdentifier` corrispondente al
+      :code:`subjectKeyIdentifier: del certificato di certificazione utilizzato per
+      sottoscrivere il certificato di marcatura temporale; l’estensione *non* è marcata critica;
+
+   e. :code:`subjectKeyIdentifier` (`ᴏɪᴅ 2.5.29.14 <http://oid-info.com/get/2.5.29.14>`__) —
+      contenente il valore :code:`keyIdentifier` per identificare il certificato;
+      l’estensione *non* è marcata critica;
+
+   f. Ulteriori estensioni possono essere inserite nel certificato purché conformi
+      agli standard citati nel presente provvedimento e *non* marcate critiche.
