@@ -19,11 +19,11 @@ seguenti raccomandazioni:
 
 3. Al fine di ottemperare a quanto prescritto negli allegati I (lettera
    *h*), III (lettera *h*) e IV (lettera *i*) del :ref:`regolamento eIDAS <eIDAS>`,
-   è utilizzato l’\ :code:`accessMethod` :code:`id-ad-caIssuers`, con
-   :code:`accessLocation` :code:`uniformResourceIdentifier`.
+   è utilizzato l’\ :code:`accessMethod` ``id-ad-caIssuers``, con
+   :code:`accessLocation` ``uniformResourceIdentifier``.
 
-4. L’estensione :code:`authorityKeyIdentifier` (`ᴏɪᴅ 2.5.29.35 <http://oid-info.com/get/2.5.29.35>`__) contiene almeno
-   il campo :code:`keyIdentifier`, *non* marcata critica.
+4. L’estensione :code:`authorityKeyIdentifier` (`ᴏɪᴅ 2.5.29.35 <http://oid-info.com/get/2.5.29.35>`__)
+   contiene almeno il campo :code:`keyIdentifier`, *non* marcata critica.
 
 5. Il campo :code:`SubjectDN` (dati identificativi del titolare) è
    caratterizzato da:
@@ -66,7 +66,7 @@ seguenti raccomandazioni:
       linguaggio naturale e, facoltativamente, una seconda parte
       costituita da un codice numerico derivato dai codici delle
       professioni pubblicati da ISTAT. Nel caso in cui sia presente,
-      il codice ISTAT della professione è preceduto dalla stringa “``::``”
+      il codice ISTAT della professione è preceduto dalla stringa ``::``
       (esadecimale 0x3A3A, e ``title=descrizioneInLinguaggioNaturale::codiceNumerico``).
       L’\ :code:`organizationName` non è utilizzato nel caso in cui il titolare
       sia un semplice cliente dell’organizzazione.
@@ -97,7 +97,7 @@ seguenti raccomandazioni:
    delle limitazioni d’uso che è auspicabile siano garantite agli utenti.
 
 8. È fortemente sconsigliato l’utilizzo dei caratteri *wildcard* come
-   “``*``” (esadecimale 0x2A) in tutti i nomi di dominio nei certificati
+   ``*`` (esadecimale 0x2A) in tutti i nomi di dominio nei certificati
    qualificati di autenticazione di siti web.
 
 9. Ulteriori estensioni possono essere inserite nel certificato purché
